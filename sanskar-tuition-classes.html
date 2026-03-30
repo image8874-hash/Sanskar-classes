@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sanskar Tuition Classes – Premium coaching institute in Adipur offering Classes 1–12, B.Com to M.Com, BBA to MBA, and special preparation for Navodaya & Sainik School exams.">
+<meta name="keywords" content="tuition classes Adipur, coaching Adipur, Navodaya coaching, Sainik School coaching, commerce tuition Kutch">
+<title>Sanskar Tuition Classes – Adipur | Navodaya & Commerce Coaching</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root {
+  --blue: #1a56db;
+  --blue-dark: #1042b8;
+  --blue-light: #e8f0fe;
+  --blue-mid: #3b82f6;
+  --orange: #f97316;
+  --orange-light: #fff7ed;
+  --orange-dark: #ea6b05;
+  --white: #ffffff;
+  --off-white: #f8faff;
+  --gray: #6b7280;
+  --gray-light: #f3f4f6;
+  --text: #111827;
+  --text-soft: #374151;
+  --shadow: 0 4px 24px rgba(26,86,219,0.10);
+  --shadow-lg: 0 8px 40px rgba(26,86,219,0.15);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Poppins', sans-serif; color: var(--text); background: var(--white); overflow-x: hidden; }
+
+/* NOTICE BAR */
+.notice-bar {
+  background: linear-gradient(90deg, var(--blue-dark), var(--blue-mid));
+  color: #fff; text-align: center; padding: 9px 16px;
+  font-size: 0.85rem; font-weight: 500; letter-spacing: 0.3px;
+  position: relative; z-index: 1000;
+}
+.notice-bar .badge {
+  background: var(--orange); color: #fff; padding: 2px 10px;
+  border-radius: 20px; font-size: 0.78rem; font-weight: 700;
+  margin-right: 8px; animation: pulse 1.5s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.75} }
+
+/* NAVBAR */
+nav {
+  position: sticky; top: 0; z-index: 999;
+  background: rgba(255,255,255,0.97); backdrop-filter: blur(12px);
+  box-shadow: 0 2px 16px rgba(26,86,219,0.08); padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between; height: 68px;
+}
+.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo-icon {
+  width: 44px; height: 44px;
+  background: linear-gradient(135deg, var(--blue), var(--blue-mid));
+  border-radius: 12px; display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.3rem; font-weight: 800;
+  box-shadow: 0 4px 12px rgba(26,86,219,0.3);
+}
+.nav-brand-text { line-height: 1.2; }
+.nav-brand-text .name { font-size: 1rem; font-weight: 700; color: var(--blue); display:block; }
+.nav-brand-text .tagline { font-size: 0.7rem; color: var(--gray); display:block; }
+.nav-links { display: flex; gap: 8px; align-items: center; }
+.nav-links a {
+  text-decoration: none; color: var(--text-soft); font-size: 0.85rem; font-weight: 500;
+  padding: 6px 14px; border-radius: 8px; transition: var(--transition);
+}
+.nav-links a:hover { background: var(--blue-light); color: var(--blue); }
+.nav-cta { background: var(--orange) !important; color: #fff !important; font-weight: 600 !important; box-shadow: 0 2px 8px rgba(249,115,22,0.3); }
+.nav-cta:hover { background: var(--orange-dark) !important; transform: translateY(-1px); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+.hamburger span { display: block; width: 24px; height: 2.5px; background: var(--blue); border-radius: 2px; transition: var(--transition); }
+.mobile-menu {
+  display: none; position: fixed; top: 68px; left: 0; right: 0;
+  background: #fff; box-shadow: var(--shadow-lg); padding: 16px;
+  z-index: 998; flex-direction: column; gap: 4px;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  text-decoration: none; color: var(--text-soft); font-size: 0.95rem; font-weight: 500;
+  padding: 12px 16px; border-radius: 10px; transition: var(--transition);
+}
+.mobile-menu a:hover { background: var(--blue-light); color: var(--blue); }
+
+/* HERO */
+.hero {
+  min-height: 92vh; padding: 60px 24px 80px;
+  background: linear-gradient(135deg, #e8f0fe 0%, #f0f7ff 40%, #fff7ed 100%);
+  display: flex; align-items: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; top: -120px; right: -120px;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(26,86,219,0.10) 0%, transparent 70%); border-radius: 50%;
+}
+.hero::after {
+  content: ''; position: absolute; bottom: -80px; left: -80px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%); border-radius: 50%;
+}
+.hero-container {
+  max-width: 1100px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center; position: relative; z-index: 1;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px; background: #fff;
+  border: 1.5px solid rgba(26,86,219,0.15); color: var(--blue);
+  font-size: 0.8rem; font-weight: 600; padding: 6px 16px; border-radius: 30px;
+  margin-bottom: 20px; box-shadow: 0 2px 12px rgba(26,86,219,0.08);
+}
+.hero-badge i { color: var(--orange); }
+.hero-headline {
+  font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem); font-weight: 800;
+  color: var(--text); line-height: 1.3; margin-bottom: 16px;
+}
+.hero-headline .highlight { color: var(--blue); position: relative; }
+.hero-headline .highlight::after {
+  content: ''; position: absolute; bottom: 2px; left: 0; right: 0;
+  height: 4px; background: var(--orange); border-radius: 2px; opacity: 0.5;
+}
+.hero-sub { font-size: 1rem; color: var(--gray); line-height: 1.7; margin-bottom: 32px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 36px; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px; background: var(--blue);
+  color: #fff; padding: 14px 28px; border-radius: 50px; text-decoration: none;
+  font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 20px rgba(26,86,219,0.35); transition: var(--transition);
+}
+.btn-primary:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 8px 28px rgba(26,86,219,0.4); }
+.btn-whatsapp {
+  display: inline-flex; align-items: center; gap: 8px; background: #25d366;
+  color: #fff; padding: 14px 28px; border-radius: 50px; text-decoration: none;
+  font-weight: 600; font-size: 0.95rem; box-shadow: 0 4px 20px rgba(37,211,102,0.35); transition: var(--transition);
+}
+.btn-whatsapp:hover { background: #1da855; transform: translateY(-2px); }
+.hero-stats { display: flex; gap: 20px; flex-wrap: wrap; }
+.hero-stat {
+  text-align: center; background: #fff; padding: 14px 18px;
+  border-radius: var(--radius-sm); box-shadow: var(--shadow); min-width: 85px;
+}
+.hero-stat .num { font-size: 1.5rem; font-weight: 800; color: var(--blue); display: block; }
+.hero-stat .lbl { font-size: 0.7rem; color: var(--gray); font-weight: 500; }
+.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
+.hero-card-main {
+  background: #fff; border-radius: 24px; box-shadow: var(--shadow-lg);
+  padding: 32px; position: relative; z-index: 2; max-width: 380px; width: 100%;
+}
+.icon-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.subject-chip {
+  background: var(--blue-light); color: var(--blue);
+  padding: 5px 14px; border-radius: 30px; font-size: 0.78rem; font-weight: 600;
+}
+.subject-chip.orange { background: var(--orange-light); color: var(--orange); }
+.hero-card-main h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+.hero-card-main p { font-size: 0.83rem; color: var(--gray); line-height: 1.6; }
+.hero-card-float {
+  position: absolute; background: #fff; border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg); padding: 12px 16px;
+  display: flex; align-items: center; gap: 10px; font-size: 0.8rem; font-weight: 600;
+  animation: float 3s ease-in-out infinite;
+}
+.hero-card-float.top { top: -20px; right: -20px; animation-delay: 0s; }
+.hero-card-float.bottom { bottom: -20px; left: -20px; animation-delay: 1.5s; }
+.hero-card-float i { font-size: 1.2rem; }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+/* SECTION COMMONS */
+section { padding: 80px 24px; }
+.section-label {
+  display: inline-block; background: var(--blue-light); color: var(--blue);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 6px 16px; border-radius: 30px; margin-bottom: 12px;
+}
+.section-label.orange { background: var(--orange-light); color: var(--orange); }
+.section-title { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 800; color: var(--text); line-height: 1.3; margin-bottom: 12px; }
+.section-sub { font-size: 1rem; color: var(--gray); max-width: 560px; line-height: 1.7; }
+.text-center { text-align: center; }
+.text-center .section-sub { margin: 0 auto; }
+.container { max-width: 1100px; margin: 0 auto; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-img-wrap { position: relative; border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.about-img-placeholder {
+  width: 100%; height: 340px;
+  background: linear-gradient(135deg, var(--blue-light), #dbeafe);
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; color: var(--blue);
+}
+.about-img-placeholder i { font-size: 3rem; opacity: 0.5; }
+.about-img-placeholder p { font-size: 0.9rem; opacity: 0.7; }
+.about-badge {
+  position: absolute; bottom: 20px; right: 20px;
+  background: var(--orange); color: #fff; padding: 12px 20px;
+  border-radius: 14px; text-align: center; box-shadow: 0 4px 16px rgba(249,115,22,0.4);
+}
+.about-badge .big { font-size: 1.5rem; font-weight: 800; display: block; }
+.about-badge .small { font-size: 0.72rem; font-weight: 600; }
+.about-points { margin-top: 24px; display: flex; flex-direction: column; gap: 14px; }
+.about-point {
+  display: flex; gap: 14px; align-items: flex-start;
+  padding: 14px; background: var(--off-white); border-radius: var(--radius-sm);
+  border-left: 3px solid var(--blue); transition: var(--transition);
+}
+.about-point:hover { box-shadow: var(--shadow); transform: translateX(4px); }
+.about-point i { color: var(--blue); font-size: 1.2rem; margin-top: 2px; flex-shrink: 0; }
+.about-point h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 2px; }
+.about-point p { font-size: 0.82rem; color: var(--gray); }
+
+/* COURSES */
+.courses-section { background: var(--off-white); }
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 48px; }
+.course-card {
+  background: #fff; border-radius: var(--radius); padding: 28px 24px;
+  box-shadow: var(--shadow); transition: var(--transition);
+  border-top: 4px solid var(--blue); position: relative; overflow: hidden;
+}
+.course-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, var(--blue-light) 0%, transparent 100%); opacity: 0; transition: var(--transition);
+}
+.course-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.course-card:hover::before { opacity: 1; }
+.course-card.special { border-top-color: var(--orange); }
+.course-card.special::before { background: linear-gradient(135deg, var(--orange-light) 0%, transparent 100%); }
+.course-icon {
+  width: 52px; height: 52px; background: var(--blue-light);
+  border-radius: 14px; display: flex; align-items: center; justify-content: center;
+  color: var(--blue); font-size: 1.4rem; margin-bottom: 16px; position: relative; z-index: 1;
+}
+.course-card.special .course-icon { background: var(--orange-light); color: var(--orange); }
+.course-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; position: relative; z-index: 1; }
+.course-card p { font-size: 0.83rem; color: var(--gray); line-height: 1.6; position: relative; z-index: 1; }
+.course-tag {
+  display: inline-block; margin-top: 12px; background: var(--blue-light); color: var(--blue);
+  font-size: 0.72rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; position: relative; z-index: 1;
+}
+.course-card.special .course-tag { background: var(--orange-light); color: var(--orange); }
+
+/* RESULTS */
+.results-section { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: #fff; }
+.results-section .section-label { background: rgba(255,255,255,0.15); color: #fff; }
+.results-section .section-title { color: #fff; }
+.results-section .section-sub { color: rgba(255,255,255,0.8); }
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
+.results-block h3 { font-size: 1rem; font-weight: 700; color: rgba(255,255,255,0.9); margin-bottom: 20px; display: flex; align-items: center; gap: 8px; }
+.achievement-cards { display: flex; flex-direction: column; gap: 14px; }
+.achievement-card {
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px); border-radius: var(--radius-sm);
+  padding: 16px 20px; display: flex; align-items: center; gap: 16px; transition: var(--transition);
+}
+.achievement-card:hover { background: rgba(255,255,255,0.18); transform: translateX(4px); }
+.ach-avatar {
+  width: 44px; height: 44px; background: linear-gradient(135deg, var(--orange), #fb923c);
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 800; color: #fff; flex-shrink: 0;
+}
+.ach-info .name { font-size: 0.95rem; font-weight: 700; }
+.ach-info .detail { font-size: 0.78rem; color: rgba(255,255,255,0.7); margin-top: 2px; }
+.ach-badge {
+  margin-left: auto; background: var(--orange); color: #fff;
+  padding: 4px 12px; border-radius: 20px; font-size: 0.72rem; font-weight: 700; flex-shrink: 0;
+}
+.maths-block {
+  background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius); padding: 28px; text-align: center;
+}
+.maths-big { font-size: 5rem; font-weight: 900; color: var(--orange); line-height: 1; display: block; }
+.maths-label { font-size: 1.1rem; font-weight: 700; margin: 8px 0 4px; }
+.maths-sub { font-size: 0.85rem; color: rgba(255,255,255,0.75); }
+.score-pills { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 16px; }
+.score-pill { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); padding: 5px 14px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+
+/* FACILITIES */
+.facilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 48px; }
+.facility-card {
+  background: var(--off-white); border-radius: var(--radius); padding: 24px 20px;
+  text-align: center; transition: var(--transition); border: 2px solid transparent;
+}
+.facility-card:hover { border-color: var(--blue); background: var(--blue-light); transform: translateY(-4px); box-shadow: var(--shadow); }
+.facility-icon {
+  width: 56px; height: 56px; background: linear-gradient(135deg, var(--blue), var(--blue-mid));
+  border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 1.4rem; margin: 0 auto 14px; box-shadow: 0 4px 14px rgba(26,86,219,0.25);
+}
+.facility-card h4 { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.facility-card p { font-size: 0.78rem; color: var(--gray); }
+
+/* TESTIMONIALS */
+.testimonials-section { background: var(--off-white); }
+.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+.testimonial-card {
+  background: #fff; border-radius: var(--radius); padding: 28px;
+  box-shadow: var(--shadow); transition: var(--transition); position: relative;
+}
+.testimonial-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.testimonial-card::before {
+  content: '"'; position: absolute; top: 12px; right: 20px;
+  font-size: 5rem; color: var(--blue-light); font-family: Georgia, serif; line-height: 1;
+}
+.stars { color: #f59e0b; font-size: 0.85rem; margin-bottom: 12px; }
+.testimonial-text { font-size: 0.88rem; color: var(--text-soft); line-height: 1.75; margin-bottom: 20px; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.author-avatar {
+  width: 42px; height: 42px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--blue-mid));
+  display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;
+}
+.author-name { font-size: 0.88rem; font-weight: 700; }
+.author-role { font-size: 0.75rem; color: var(--gray); }
+
+/* GALLERY */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.gallery-item {
+  border-radius: var(--radius-sm); overflow: hidden; position: relative;
+  aspect-ratio: 4/3; cursor: pointer; transition: var(--transition);
+}
+.gallery-item:hover { transform: scale(1.02); box-shadow: var(--shadow-lg); }
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-placeholder {
+  width: 100%; height: 100%; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 10px;
+}
+.gallery-bg-1 { background: linear-gradient(135deg, #dbeafe, #bfdbfe); }
+.gallery-bg-2 { background: linear-gradient(135deg, #e0e7ff, #c7d2fe); }
+.gallery-bg-3 { background: linear-gradient(135deg, #d1fae5, #a7f3d0); }
+.gallery-bg-4 { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+.gallery-bg-5 { background: linear-gradient(135deg, #ffe4e6, #fecdd3); }
+.gallery-bg-6 { background: linear-gradient(135deg, #f0fdf4, #bbf7d0); }
+.gallery-placeholder i { font-size: 2.2rem; color: var(--blue); opacity: 0.5; }
+.gallery-placeholder span { font-size: 0.8rem; color: var(--gray); font-weight: 500; }
+.gallery-overlay {
+  position: absolute; inset: 0; background: rgba(26,86,219,0.85);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: var(--transition); color: #fff; font-size: 0.9rem; font-weight: 600;
+}
+
+/* LOCATION */
+.location-section { background: var(--off-white); }
+.location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; margin-top: 48px; }
+.map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+.map-embed iframe { display: block; border: none; width: 100%; height: 320px; }
+.location-info { display: flex; flex-direction: column; gap: 20px; }
+.location-card { background: #fff; border-radius: var(--radius-sm); padding: 20px; box-shadow: var(--shadow); display: flex; gap: 14px; align-items: flex-start; }
+.loc-icon { width: 44px; height: 44px; background: var(--blue-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: 1.1rem; flex-shrink: 0; }
+.loc-text h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 4px; }
+.loc-text p { font-size: 0.83rem; color: var(--gray); line-height: 1.6; }
+.loc-btn {
+  display: inline-flex; align-items: center; gap: 8px; margin-top: 8px;
+  background: var(--blue); color: #fff; padding: 8px 18px; border-radius: 30px;
+  text-decoration: none; font-size: 0.8rem; font-weight: 600; transition: var(--transition);
+}
+.loc-btn:hover { background: var(--blue-dark); }
+
+/* SOCIAL */
+.social-section { background: #fff; }
+.social-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
+.social-btn {
+  display: flex; align-items: center; gap: 12px; padding: 18px 32px;
+  border-radius: var(--radius); text-decoration: none; font-weight: 700; font-size: 1rem;
+  transition: var(--transition); box-shadow: var(--shadow); min-width: 220px; justify-content: center;
+}
+.social-btn.instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+.social-btn.youtube { background: #ff0000; color: #fff; }
+.social-btn.whatsapp { background: #25d366; color: #fff; }
+.social-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.social-btn i { font-size: 1.4rem; }
+
+/* CTA */
+.cta-section { background: linear-gradient(135deg, var(--orange), #fb923c); padding: 80px 24px; text-align: center; position: relative; overflow: hidden; }
+.cta-section::before { content: ''; position: absolute; top: -60px; left: -60px; width: 300px; height: 300px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.cta-section::after { content: ''; position: absolute; bottom: -80px; right: -40px; width: 260px; height: 260px; background: rgba(255,255,255,0.08); border-radius: 50%; }
+.cta-content { position: relative; z-index: 1; }
+.cta-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.2); color: #fff; padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 700; margin-bottom: 20px; }
+.cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; color: #fff; margin-bottom: 8px; }
+.cta-section p { font-size: 1rem; color: rgba(255,255,255,0.88); margin-bottom: 32px; }
+.cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.btn-white { display: inline-flex; align-items: center; gap: 8px; background: #fff; color: var(--orange); padding: 14px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.95rem; box-shadow: 0 4px 20px rgba(0,0,0,0.15); transition: var(--transition); }
+.btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.btn-white-outline { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 2px solid #fff; color: #fff; padding: 14px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.95rem; transition: var(--transition); }
+.btn-white-outline:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+
+/* FOOTER */
+footer { background: #0f1f4b; color: rgba(255,255,255,0.8); padding: 60px 24px 24px; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.footer-brand .name { font-size: 1.2rem; font-weight: 800; color: #fff; margin-bottom: 6px; }
+.footer-brand p { font-size: 0.83rem; line-height: 1.7; color: rgba(255,255,255,0.6); margin-bottom: 16px; }
+.footer-contact-items { display: flex; flex-direction: column; gap: 10px; }
+.footer-contact-item { display: flex; align-items: center; gap: 10px; font-size: 0.83rem; }
+.footer-contact-item i { color: var(--orange); width: 16px; }
+.footer-contact-item a { color: rgba(255,255,255,0.8); text-decoration: none; }
+.footer-heading { font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 16px; }
+.footer-links { display: flex; flex-direction: column; gap: 8px; }
+.footer-links a { font-size: 0.82rem; color: rgba(255,255,255,0.6); text-decoration: none; transition: var(--transition); }
+.footer-links a:hover { color: var(--orange); padding-left: 4px; }
+.footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 0 auto 20px; max-width: 1100px; }
+.footer-bottom { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+
+/* FLOATING BUTTONS */
+.floating-btns { position: fixed; bottom: 24px; right: 20px; display: flex; flex-direction: column; gap: 14px; z-index: 9999; }
+.float-btn {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; color: #fff; text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25); transition: var(--transition); position: relative;
+}
+.float-btn:hover { transform: scale(1.1); }
+.float-btn.wa { background: #25d366; box-shadow: 0 4px 20px rgba(37,211,102,0.5); }
+.float-btn.call { background: var(--blue); box-shadow: 0 4px 20px rgba(26,86,219,0.5); }
+.float-tooltip {
+  position: absolute; right: 68px; background: rgba(0,0,0,0.8); color: #fff;
+  padding: 6px 12px; border-radius: 8px; font-size: 0.75rem; font-weight: 600;
+  white-space: nowrap; opacity: 0; pointer-events: none; transition: var(--transition);
+}
+.float-btn:hover .float-tooltip { opacity: 1; }
+.float-btn::before {
+  content: ''; position: absolute; inset: -4px; border-radius: 50%;
+  border: 2px solid currentColor; opacity: 0.3; animation: ripple 2s infinite;
+}
+@keyframes ripple { 0%{transform:scale(1);opacity:0.4} 100%{transform:scale(1.5);opacity:0} }
+
+/* ANIMATIONS */
+.fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.count-animate { display: inline-block; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero-container { grid-template-columns: 1fr; gap: 32px; }
+  .hero-visual { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .results-grid { grid-template-columns: 1fr; }
+  .location-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero-btns { flex-direction: column; }
+  .hero-btns a { text-align: center; justify-content: center; }
+  .cta-btns { flex-direction: column; align-items: center; }
+}
+@media (max-width: 480px) {
+  section { padding: 60px 16px; }
+  .gallery-grid { grid-template-columns: 1fr; }
+  .social-btn { min-width: 100%; }
+}
+</style>
+</head>
+<body>
+
+<!-- NOTICE BAR -->
+<div class="notice-bar">
+  <marquee behavior="scroll" direction="left" scrollamount="4">
+    <span><span class="badge">🔔 NEW</span> Admissions Open  Limited Seats Available – Enroll Now</span>
+    <span>📞 Call: +91 76005 15832 &nbsp;|&nbsp; 💬 WhatsApp for Details &nbsp;|&nbsp; 🏆 10 Students Scored 100/100 in Maths &nbsp;|&nbsp; 🎯 3 Students Selections from Adipur!</span>
+  </marquee>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#" class="nav-brand">
+    <div class="nav-logo-icon">S</div>
+    <div class="nav-brand-text">
+      <span class="name">Sanskar Tuition Classes</span>
+      <span class="tagline">Adipur's Premier Coaching Institute</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#results">Results</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="nav-cta">Enquire Now</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#courses" onclick="toggleMenu()">Courses</a>
+  <a href="#results" onclick="toggleMenu()">Results</a>
+  <a href="#facilities" onclick="toggleMenu()">Facilities</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" style="background:var(--orange);color:#fff;font-weight:700;text-align:center;">💬 WhatsApp Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content fade-up">
+      <div class="hero-badge"><i class="fas fa-star"></i> Adipur's Trusted Coaching Institute</div>
+      <h1 class="hero-headline">
+        हर student मेहनत करता है…<br>
+        <span class="highlight">सही direction</span> हम देते हैं
+      </h1>
+      <p class="hero-sub">Helping students achieve top results with proper guidance, personal attention, and concept clarity. From Class 1 to MBA — we shape futures.</p>
+      <div class="hero-btns">
+        <a href="tel:+917600515832" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+        <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><span class="num count-animate" data-target="200">0</span>+<span class="lbl">Students</span></div>
+        <div class="hero-stat"><span class="num count-animate" data-target="3">0</span><span class="lbl">Students Selected</span></div>
+        <div class="hero-stat"><span class="num count-animate" data-target="5">0</span>+<span class="lbl">Yrs Experience</span></div>
+      </div>
+    </div>
+      </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--white)">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap fade-up">
+        <div class="about-img-placeholder">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <p>Coaching Class Photo</p>
+          <p style="font-size:0.75rem;opacity:0.5">(Replace with actual image)</p>
+        </div>
+        <div class="about-badge"><span class="big">5+</span><span class="small">Years of<br>Excellence</span></div>
+      </div>
+      <div class="fade-up">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Why Sanskar Tuition Classes?</h2>
+        <p style="color:var(--gray);font-size:0.92rem;line-height:1.8;margin-bottom:24px;">
+          At Sanskar Tuition Classes, we believe every student deserves the right guidance to unlock their true potential. With years of dedicated teaching experience, we've helped hundreds of students from Adipur achieve outstanding results — from school toppers to Sainik School and Navodaya selections.
+        </p>
+        <div class="about-points">
+          <div class="about-point">
+            <i class="fas fa-user-graduate"></i>
+            <div><h4>Experienced & Dedicated Faculty</h4><p>Our teachers bring deep subject expertise and genuine care for every student's progress.</p></div>
+          </div>
+          <div class="about-point">
+            <i class="fas fa-users"></i>
+            <div><h4>Small Batches, Personal Attention</h4><p>Limited students per batch ensures every child gets the focused attention they deserve.</p></div>
+          </div>
+          <div class="about-point">
+            <i class="fas fa-lightbulb"></i>
+            <div><h4>Concept Clarity First</h4><p>We build strong conceptual foundations — not just exam preparation — that last a lifetime.</p></div>
+          </div>
+          <div class="about-point">
+            <i class="fas fa-chart-line"></i>
+            <div><h4>Proven & Measurable Results</h4><p>Top scores, competitive exam selections, and hundreds of satisfied families — every year.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="courses-section" id="courses">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label">Courses</span>
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-sub">Comprehensive coaching for school students, college students, and competitive exam aspirants — all under one roof.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card fade-up">
+        <div class="course-icon"><i class="fas fa-school"></i></div>
+        <h3>Class 1 to 12 (Commerce)</h3>
+        <p>Complete subject coaching for all classes with special focus on Commerce stream — Accounts, Economics, Business Studies & more.</p>
+        <span class="course-tag">School Level</span>
+      </div>
+      <div class="course-card fade-up">
+        <div class="course-icon"><i class="fas fa-university"></i></div>
+        <h3>B.Com to M.Com</h3>
+        <p>Undergraduate and postgraduate Commerce coaching with in-depth subject coverage, exam strategies, and career guidance.</p>
+        <span class="course-tag">Graduation</span>
+      </div>
+      <div class="course-card fade-up">
+        <div class="course-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>BBA to MBA</h3>
+        <p>Management education coaching from BBA to MBA level — covering all core management subjects with practical application.</p>
+        <span class="course-tag">Management</span>
+      </div>
+      <div class="course-card special fade-up">
+        <div class="course-icon"><i class="fas fa-medal"></i></div>
+        <h3>Navodaya Exam Preparation</h3>
+        <p>Structured coaching for Jawahar Navodaya Vidyalaya selection exams — proven curriculum with past year papers and mock tests.</p>
+        <span class="course-tag">Competitive</span>
+      </div>
+      <div class="course-card special fade-up">
+        <div class="course-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Sainik School Exam</h3>
+        <p>Special preparation for Sainik School entrance exams for Class 6 and Class 9. We have already produced 3 selections!</p>
+        <span class="course-tag">Competitive</span>
+      </div>
+      <div class="course-card fade-up">
+        <div class="course-icon"><i class="fas fa-calculator"></i></div>
+        <h3>Maths Excellence Program</h3>
+        <p>Special intensive Maths batches designed to produce 100/100 scorers. Our 10 perfect-score students prove the method!</p>
+        <span class="course-tag">Specialized</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results-section" id="results">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label">Our Achievements</span>
+      <h2 class="section-title">Results That Speak</h2>
+      <p class="section-sub">We are proud of every student who has achieved excellence under our guidance.</p>
+    </div>
+    <div class="results-grid">
+      <div class="results-block fade-up">
+        <h3><i class="fas fa-trophy" style="color:var(--orange)"></i> Sainik School Selections 🎯</h3>
+        <div class="achievement-cards">
+          <div class="achievement-card">
+            <div class="ach-avatar">V</div>
+            <div class="ach-info">
+              <div class="name">Vaibhav Gadhvi</div>
+              <div class="detail">Sainik School Entrance – Class 9</div>
+            </div>
+            <span class="ach-badge">Selected ✓</span>
+          </div>
+          <div class="achievement-card">
+            <div class="ach-avatar">R</div>
+            <div class="ach-info">
+              <div class="name">Raghav Gadhvi</div>
+              <div class="detail">Sainik School Entrance – Class 9</div>
+            </div>
+            <span class="ach-badge">Selected ✓</span>
+          </div>
+          <div class="achievement-card">
+            <div class="ach-avatar">A</div>
+            <div class="ach-info">
+              <div class="name">Alok Parmar</div>
+              <div class="detail">Sainik School Entrance – Class 6</div>
+            </div>
+            <span class="ach-badge">Selected ✓</span>
+          </div>
+        </div>
+      </div>
+      <div class="results-block fade-up">
+        <h3><i class="fas fa-star" style="color:#f59e0b"></i> Mathematics Excellence 💯</h3>
+        <div class="maths-block">
+          <span class="maths-big">10</span>
+          <div class="maths-label">Students Scored 100/100</div>
+          <div class="maths-sub">in Mathematics — Across different classes and batches</div>
+          <div class="score-pills">
+            <span class="score-pill">🏅 Perfect Score</span>
+            <span class="score-pill">📊 Consistently</span>
+            <span class="score-pill">🎯 Every Year</span>
+          </div>
+          <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.15)">
+            <p style="font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.7">Our Maths program is built to make students fall in love with the subject — and the results prove it. Perfect scores aren't a coincidence; they're a system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FACILITIES -->
+<section id="facilities" style="background:#fff">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label orange">Our Facilities</span>
+      <h2 class="section-title">Everything a Student Needs</h2>
+      <p class="section-sub">We've built an environment where students thrive — academically, mentally, and holistically.</p>
+    </div>
+    <div class="facilities-grid">
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-users-between-lines"></i></div><h4>Small Batch Size</h4><p>Limited seats per batch for maximum focus</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-person-chalkboard"></i></div><h4>Personal Attention</h4><p>Every student gets individual guidance</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-clipboard-check"></i></div><h4>Weekly Tests</h4><p>Regular assessments to track progress</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-comments"></i></div><h4>Doubt Solving Sessions</h4><p>Dedicated sessions to clear every doubt</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-chalkboard-teacher"></i></div><h4>Experienced Faculty</h4><p>Qualified and passionate teachers</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-chart-bar"></i></div><h4>Result Tracking</h4><p>Systematic monitoring of each student's growth</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-heart"></i></div><h4>Friendly Environment</h4><p>Disciplined yet warm and supportive atmosphere</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-compass"></i></div><h4>Career Guidance</h4><p>Expert advice on career path and streams</p></div>
+      <div class="facility-card fade-up"><div class="facility-icon"><i class="fas fa-bell"></i></div><h4>Regular Parent Updates</h4><p>Transparent communication with families</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--off-white)">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label">Testimonials</span>
+      <h2 class="section-title">What Parents & Students Say</h2>
+      <p class="section-sub">Real stories from families who trusted us with their children's future.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"My son's Maths marks improved from 65 to 98 in just 3 months. The teachers at Sanskar are incredibly dedicated and make sure every concept is crystal clear. Highly recommended to every parent in Adipur!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div><div class="author-name">Ramesh Patel</div><div class="author-role">Parent of Class 10 Student</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"I was preparing for Sainik School and was very stressed. The coaching here is structured, disciplined, and the teachers guided me like family. I got selected and I owe it all to Sanskar Tuition Classes!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div><div class="author-name">Arjun Sharma</div><div class="author-role">Sainik School Selected Student</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"As a Commerce student, I was struggling with Accounts. After joining Sanskar, everything just clicked. The personal attention is truly unlike any other class. My daughter scored 94% this year!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">K</div>
+          <div><div class="author-name">Kavita Mehta</div><div class="author-role">Parent of Class 12 Commerce Student</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The weekly tests and doubt-solving sessions are amazing. My B.Com results improved drastically. The teachers are always available and the environment is very motivating. Best classes in Adipur without a doubt!"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">N</div>
+          <div><div class="author-name">Nisha Joshi</div><div class="author-role">B.Com Student</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" style="background:#fff">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label orange">Gallery</span>
+      <h2 class="section-title">Life at Sanskar</h2>
+      <p class="section-sub">A glimpse into our vibrant coaching environment where learning meets inspiration.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-1"><i class="fas fa-chalkboard-teacher" style="color:var(--blue);opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Classroom Session</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> Classroom</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-2"><i class="fas fa-users" style="color:#4f46e5;opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Students in Group Study</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> Group Study</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-3"><i class="fas fa-trophy" style="color:#059669;opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Award Ceremony</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> Awards</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-4"><i class="fas fa-clipboard-list" style="color:#d97706;opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Weekly Test Session</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> Weekly Test</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-5"><i class="fas fa-handshake" style="color:#be185d;opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Parent-Teacher Meeting</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> PTM</div>
+      </div>
+      <div class="gallery-item fade-up">
+        <div class="gallery-placeholder gallery-bg-6"><i class="fas fa-medal" style="color:#16a34a;opacity:0.5;font-size:2.5rem"></i><span style="color:var(--gray);font-size:0.85rem">Result Celebration</span></div>
+        <div class="gallery-overlay"><i class="fas fa-expand" style="margin-right:6px"></i> Results</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="contact" style="background:var(--off-white)">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label">Find Us</span>
+      <h2 class="section-title">Visit Sanskar Tuition Classes</h2>
+      <p class="section-sub">Conveniently located in the heart of Adipur. Come visit us today!</p>
+    </div>
+    <div class="location-grid">
+      <div class="map-embed fade-up">
+        <iframe src="https://maps.google.com/maps?q=Shubh+Mangal+Residency+Meghpar+Borichi+Adipur+370205&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="location-info fade-up">
+        <div class="location-card">
+          <div class="loc-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="loc-text">
+            <h4>Our Address</h4>
+            <p>Office No 75, Shubh Mangal Residency,<br>Meghpar Borichi, Adipur – 370205,<br>Kutch, Gujarat</p>
+            <a href="https://maps.app.goo.gl/MyspjVywNY8oCby46" target="_blank" class="loc-btn"><i class="fas fa-directions"></i> Get Directions</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon"><i class="fas fa-phone"></i></div>
+          <div class="loc-text">
+            <h4>Call Us</h4>
+            <p>Available Mon–Sat, 8 AM to 8 PM</p>
+            <a href="tel:+917600515832" class="loc-btn"><i class="fas fa-phone"></i> +91 76005 15832</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="loc-text">
+            <h4>WhatsApp for Quick Reply</h4>
+            <p>Ask about fees, schedule, batch timings</p>
+            <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="loc-btn" style="background:#25d366"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon"><i class="fas fa-clock"></i></div>
+          <div class="loc-text">
+            <h4>Batch Timings</h4>
+            <p>Morning: 7:00 AM – 9:00 AM<br>Evening: 4:00 PM – 8:00 PM<br>Sunday: Special Doubt Sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section style="background:#fff">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="section-label orange">Follow Us</span>
+      <h2 class="section-title">Stay Connected</h2>
+      <p class="section-sub">Follow us on social media for updates, tips, results, and motivational content.</p>
+    </div>
+    <div class="social-grid fade-up">
+      <a href="https://www.instagram.com/stc_ca_chetan_sir?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-btn instagram" target="_blank"><i class="fab fa-instagram"></i> Follow on Instagram</a>
+      <a href="https://www.youtube.com/@stc-cachetansir" class="social-btn youtube" target="_blank"><i class="fab fa-youtube"></i> Subscribe on YouTube</a>
+      <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="social-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-content">
+    <div class="cta-badge fade-up"><i class="fas fa-fire"></i> ⚡ Limited Seats Available</div>
+    <h2 class="fade-up">Your Child's Success Starts Here!</h2>
+    <p class="fade-up">Don't wait — seats fill up fast. Join Sanskar Tuition Classes today and give your child the direction they deserve.</p>
+    <div class="cta-btns fade-up">
+      <a href="tel:+917600515832" class="btn-white"><i class="fas fa-phone"></i> Call Now</a>
+      <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="btn-white-outline"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="name">Sanskar Tuition Classes</div>
+      <p>Adipur's premier coaching institute for school, college, and competitive exam preparation. Trusted by hundreds of families.</p>
+      <div class="footer-contact-items">
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i> Office No 75, Shubh Mangal Residency, Meghpar Borichi, Adipur – 370205</div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i> <a href="tel:+917600515832">+91 76005 15832</a></div>
+        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i> <a href="https://wa.me/917600515832">WhatsApp Now</a></div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Quick Links</div>
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#results">Results</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">Courses</div>
+      <div class="footer-links">
+        <a href="#courses">Class 1 to 12 Commerce</a>
+        <a href="#courses">B.Com to M.Com</a>
+        <a href="#courses">BBA to MBA</a>
+        <a href="#courses">Navodaya Exam</a>
+        <a href="#courses">Sainik School Exam</a>
+        <a href="#courses">Maths Excellence</a>
+      </div>
+    </div>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <p>© 2024 Sanskar Tuition Classes, Adipur. All rights reserved.</p>
+    <p>Made with ❤️ for our students' bright future</p>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-btns">
+  <a href="https://wa.me/917600515832?text=Hello%2C%20I%20want%20to%20know%20about%20fees%20and%20more%20details%20of%20Sanskar%20Tuition%20Classes" class="float-btn wa" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-tooltip">WhatsApp Us</span>
+  </a>
+  <a href="tel:+917600515832" class="float-btn call">
+    <i class="fas fa-phone"></i>
+    <span class="float-tooltip">Call Now</span>
+  </a>
+</div>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.querySelector('.hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+    menu.classList.remove('open');
+  }
+});
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 80);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Counter animation
+function animateCount(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1500;
+  const step = target / (duration / 16);
+  let current = 0;
+  const interval = setInterval(() => {
+    current += step;
+    if (current >= target) { current = target; clearInterval(interval); }
+    el.textContent = Math.floor(current);
+  }, 16);
+}
+const countObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { animateCount(entry.target); countObserver.unobserve(entry.target); }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.count-animate').forEach(el => countObserver.observe(el));
+
+// Navbar shadow on scroll
+window.addEventListener('scroll', () => {
+  document.querySelector('nav').style.boxShadow = window.scrollY > 50
+    ? '0 4px 24px rgba(26,86,219,0.14)'
+    : '0 2px 16px rgba(26,86,219,0.08)';
+});
+</script>
+</body>
+</html>
